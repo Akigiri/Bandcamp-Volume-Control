@@ -1,0 +1,46 @@
+.bvc-wrap {
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	margin-top: -20px;
+	overflow: visible;
+}
+
+.bvc-wrap, .bvc-wrap * {
+	box-sizing: border-box;
+}
+
+.bvc-head, .bvc-tail {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #629aa9;
+	box-shadow: 0px 0px 8px -1px #000;
+}
+
+.bvc-tail { background: #fff; }
+
+.bvc-tail,
+.bvc-wrap:hover .bvc-head { display: none; }
+.bvc-wrap:hover .bvc-tail { display: block; }
+
+.bvc-head svg {
+	fill: #fff;
+	stroke: #fff;
+	transform: scale(0.45);
+}
+
+.bvc-meter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+}
